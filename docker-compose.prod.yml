@@ -11,7 +11,7 @@ services:
       - pg_data:/var/lib/postgresql/data
 
   backend:
-    image: confirm123/taskboard-backend:latest
+    image: confirmza025/taskboard-backend:latest
     restart: unless-stopped
     environment:
       DB_HOST:     db
@@ -24,7 +24,7 @@ services:
       - db
 
   frontend:
-    image: confirm123/taskboard-frontend:latest
+    image: confirmza025/taskboard-frontend:latest
     restart: unless-stopped
     ports:
       - "80:80"
